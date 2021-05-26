@@ -1,0 +1,78 @@
+<html><head>
+    <title>
+        Project 78
+    </title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(0, 47, 255);
+        }
+
+        #heading {
+            color: rgba(127, 255, 212, 0.63);
+            font-family: cursive;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(25, 209, 209);
+        }
+
+        #image {
+            height:450px;
+            width:400px;
+            border-radius: 10%;
+            border-style: double;
+            border-width: 5px;
+            background-color: white;
+        }
+
+        #name {
+           color: blueviolet; 
+           font-weight: bold;
+           font-size: 22px;
+        }
+    </style>
+<style type="text/css"></style></head>
+
+
+<body data-new-gr-c-s-check-loaded="14.1012.0" data-gr-ext-installed="">
+    <h1 id="heading">THE FAMILY BOOK</h1>
+
+    <img id="image" src="https://i.pinimg.com/originals/98/93/ab/9893abe2999501b97dfbf283c05ee765.jpg">
+
+    <h4 id="name">Mrs. Kasturi Devi</h4>
+
+    <button onclick="next()">
+        Next
+    </button>
+
+
+    <script>
+        var members= [
+            "a.jpg",
+            "Aasdasd.jpg",
+            "https://cdn1.vectorstock.com/i/thumb-large/87/90/a-father-standing-vector-1658790.jpg",
+            "https://previews.123rf.com/images/alexutemov/alexutemov1605/alexutemov160500675/56958987-estilo-de-vida-y-la-felicidad-madre-retrato-prado-retrato-madre-madre-ilustraci%C3%B3n-vectorial-retrato-y-a.jpg",
+            "https://i.pinimg.com/originals/20/b4/9f/20b49f0e0cd8a150c0627ed4c68d5f36.jpg",
+            "https://us.123rf.com/450wm/kakigori/kakigori1511/kakigori151100055/49282228-stock-vector-beautiful-brunette-teenager-girl-with-glasses-sitting-on-isolated-white-background.jpg?ver=6",
+        ];
+        var names= [
+            "Grandma",
+            "Mrs. Kasturi Devi",
+            "Mr. Mukesh Singh",
+            "Mrs. Seema Singh",
+            "Naman Singh",
+            "Divyanshi Singh"
+        ];
+        var i=0;
+        function next(){
+        document.getElementById("image").src=members[i];
+        document.getElementById("name").innerHTML=names[i];
+        if (i>4){
+        i=0;
+        }
+        else i++;
+        };
+    </script>
+
+</body></html>
